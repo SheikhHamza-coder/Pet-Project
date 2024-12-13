@@ -65,28 +65,35 @@
 
    <!-- Query Section -->
    <section id="query" class="py-5">
-    <div class="container pt-5" style="background-color: rgba(128, 128, 128, 0.363); border-radius: 20px; box-shadow: 2px 2px 10px 2px;">
-        <h2 class="font-weight-light text-center">Have a Question?</h2>
-        <form class="m-5">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control rounded-pill" id="name" required>
-                <p id="nmsg"></p>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control rounded-pill" id="email" required>
-                <p id="emsg"></p>
-            </div>
-            <div class="form-group">
-                <label for="message">Ask Question</label>
-                <textarea class="form-control round-5" id="message" rows="5" required></textarea>
-                <p id="tmsg"></p>
-            </div>
-            <button type="button" class="btn btn-primary mb-2" id="Sbtn">Submit</button>
-        </form>
+    <div class="container pt-5">
+       <div class="row">
+        <div class="col-12">
+          <h2 class="font-weight-light text-center">Have a Question?</h2>
+          <form class="m-5">
+              <div class="form-group">
+                  <label for="name"><b>Name:</b></label>
+                  <input type="text" class="form-control rounded-pill" id="name" required style="box-shadow: inset 2px 2px 2px 2px gray">
+                  <p id="nmsg"></p>
+              </div>
+              <div class="form-group">
+                  <label for="email"><b>Email:</b></label>
+                  <input type="email" class="form-control rounded-pill" id="email" required style="box-shadow: inset 2px 2px 2px 2px gray">
+                  <p id="emsg"></p>
+              </div>
+              <div class="form-group">
+                  <label for="message"><b>Ask Question:</b></label>
+                  <textarea class="form-control round-5" id="message" rows="5" required style="box-shadow: inset 2px 2px 2px 2px gray; border-radius: 15px;"></textarea>
+                  <p id="tmsg"></p>
+              </div>
+              <div class="justify-content-end d-flex">
+              <button type="button" class="btn btn-primary mb-2" id="Sbtn">Send</button>
+              </div>
+            </form>
+        </div>
+       </div>
     </div>
 </section>
+
 
 
    <!-- footer start -->
