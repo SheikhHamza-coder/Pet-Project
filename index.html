@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Patrona Puppy Encyclopedia</title>
+
+  <style>
+    html{
+      height: 100%;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+    <div class="container-fluid">
+      <img id="mylogo" src="logo.png" alt="logo" style="width: 80px; height: 60px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" id="hover">Home</a>
+          </li>
+          <li class="nav-item dropdown" id="hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catagory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="dogcatagory.html" id="hover">Dogs</a></li>
+              <li><a class="dropdown-item" href="catcatagory.html" id="hover">Cats</a></li>
+              <li><a class="dropdown-item" href="rabbitcatagory.html" id="hover">Rabbits</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="hover">
+            <a class="nav-link" href="products.html" id="navbarDropdown" role="button">
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="hover">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html" id="hover">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Navbar-->
+
+
+
+  <!--Home-->
+
+  <section class="home" id="home">
+    <div class="container-fluid mb-2">
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 mt-1">
+
+          <!-- Slider -->
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="slide image/slider1.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="slide image/slider2.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="slide image/slider3.jpg" class="d-block w-100 img-fluid" alt="..." style="height: 600px;">
+                <div class="carousel-caption d-none d-md-block text-dark">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <!-- Slider -->
+
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1">
+              <img src="slide image/home2.jpg" alt="Picture 2" style="width: 100%;height: 300px;">
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-1">
+              <img src="slide image/home3.jpg" alt="Picture 3" style="width: 100%;height: 297px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--Home-->
+
+
+
+  <!--Category-->
+
+  <div class="container-fluid mt-5 mb-5">
+    <div class="mb-2">
+      <section id="Category" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="font-weight-light text-center"
+            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            Catagories</h2>
+          <div class="row">
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <div class="card">
+                    <a href="dogcatagory.html">
+                      <img class="img-fluid" src="Catagories/Puppy.jpeg" alt="" style="width: 100%; height: 350px;">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <p class="text-justify mt-2">The dog is a domesticated descendant of the wolf. Also called the
+                    domestic dog, it was domesticated from an extinct population of Pleistocene wolves over 14,000 years
+                    ago. The dog was the first species to be domesticated by humans.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <p class="text-justify mt-3">The cat, commonly referred to as the domestic cat or house cat, is a
+                    small domesticated carnivorous mammal. It is the only domesticated species of the family Felidae.
+                    Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in
+                    the Near East around 7500 BC.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <div class="card">
+                    <a href="catcatagory.html">
+                      <img class="img-fluid" src="Catagories/cat.jpeg" alt="" style="width: 100%; height: 350px;">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <div class="card">
+                    <a href="rabbitcatagory.html">
+                      <img class="img-fluid" src="Catagories/Rabbit.jpg" alt="" style="width: 100%; height: 350px;">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-lg-6">
+                  <p class="text-justify mt-3">Rabbits are small mammals in the family Leporidae, which is in the
+                    order
+                    Lagomorpha. The European rabbit, Oryctolagus cuniculus is the ancestor of the world's hundreds of
+                    breeds of domestic rabbit. Sylvilagus includes 13 wild rabbit species, among them the seven types
+                    of
+                    cottontail.</p>
+                </div>
+              </div>
+            </div>
+      </section>
+
+      <!--Category-->
+
+
+
+      <!-- We Deliver -->
+
+      <div class="container-fluid mt-5 mb-5" style="margin-bottom: 50px;">
+        <div class="mb-2">
+          <section id="Category" class="py-5 bg-light">
+            <div class="container">
+              <h2 class="font-weight-light text-center"
+                style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                We Deliver Joy</h2>
+
+              <div class="row">
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body" style="height:200px;">
+                      <h5>Puppy Chaperone</h5>
+                      <p style="text-align: justify;">
+                        A Puppy Chaperone brings your puppy to an airport near you. A Puppy Chaperone is a human
+                        companion who accompanies your puppy in the cabin of the plane.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                      <h5>Deliver Near Your Home</h5>
+                      <p style="text-align: justify;">
+                        We work with trusted licensed professionals in the commercial air and ground transportation
+                        puppy travel business to get your puppy to a pickup location as close to your home as possible.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body" style="height:200px;">
+                      <h5>Breeder Meet Up</h5>
+                      <p style="text-align: justify;">
+                        Meet the breeder and your puppy at a location near the kennel. If you are interested in a
+                        pickup, please check with a PuppySpot pack member to see if this is an option.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- We Deliver -->
+
+
+
+      <!-- footer start -->
+      <footer class="footer">
+        <section id="about">
+          <div class="container-fluid">
+            <div class="row pt-5">
+              <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; display: flex;">
+                <img id="mylogo" src="logo.png" alt="" class="img-fluid" style="width: 50%;">
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; text-align: justify;">
+                <h5 class="text-center  justify-content-center;">About Us</h5>
+                <p>
+                  Patrona Puppies has been finding loving homes for puppies for over a decade. Breeders on our site are
+                  located throughout Pennsylvania and surrounding states. If you are looking puppies for buying, look no
+                  further.
+                </p>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; text-align: justify;">
+                <h5 class="text-center  justify-content-center;">Contact Us</h5>
+                <ul class="list-unstyled text-center">
+                  <li>Phone: +1-800-123-4567</li>
+                  <li>Email: info@patronapuppy.com</li>
+                  <li>Address: 177 A Bleeckers St, New York</li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+                <h5 class="text-center">Follow Us</h5>
+                <ul class="list-inline footer-links">
+                  <li class="list-inline-item">
+                    <a id="atag" href="#">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-sm-12 col-md-8 col-lg-12 text-center">
+                <p>&copy; 2024 [Patrona Puppy]. All rights reserved.</p>
+              </div>
+            </div>
+        </section>
+      </footer>
+      <!-- footer end -->
+      <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+
+</html>

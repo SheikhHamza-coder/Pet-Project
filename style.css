@@ -1,0 +1,237 @@
+*{
+    font-family: "Nunito", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: #ffffffec;
+}
+
+.navbar{
+    background-color: rgb(216, 216, 216)!important;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+}
+
+#hover{
+  transition: transform 0.1s;
+}
+
+#hover:hover{
+  transform:scale(0.9);
+  border-radius: 15px;
+  color: black;
+  box-shadow: 2px 2px 6px 2px rgb(148, 147, 147); 
+}
+
+.collapse ul li a{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+}
+
+/* Product */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.Product {
+  text-align: center;
+}
+
+.Product h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.Product .box {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20%;
+  left: 15%;
+  opacity: 0;
+  transition: 0.5;
+}
+
+.overlay i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  margin: 10px;
+  background: white;
+}
+
+.Product h4 {
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.Product h4:nth-child(2) {
+  color: #FF7A00;
+  font-weight: bold;
+}
+
+.Product h4 span {
+  color: black;
+  text-decoration: line-through;
+  margin-right: 20px;
+  color: #5e5e5e;
+}
+
+.Product .box:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.Product i:hover {
+  background: #FF7A00;
+  color: white;
+}
+
+.box i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.box:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+/* Product */
+
+img{
+    height:300px;
+    width:100%;
+  }
+  
+  .item{
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .item-card{
+    transition:0.5s;
+    cursor:pointer;
+  }
+  .item-card-title{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+  }
+  .item-card-title i{  
+    font-size:15px;
+    transition:1s;
+    cursor:pointer;
+    color:#ffa710
+  }
+  .card-title i:hover{
+    transform: scale(1.25) rotate(100deg); 
+    color:#18d4ca;
+    
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+  .card-text{
+    height:80px;  
+  }
+  
+  .card::before, .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-events: none;
+  }
+  .card::before {
+    transform-origin: left top;
+  }
+  .card::after {
+    transform-origin: right bottom;
+  }
+  .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1, 1, 1);
+  }
+
+
+.text-box{
+  margin-top: 25px;
+}
+
+.text-box h1{
+  font-weight: 650;
+  font-size: 46px;
+  color: rgba(0, 0, 0, 0.911);
+}
+
+.text-box p{
+  font-size: 18px;
+}
+
+.available p{
+  margin-top: 50px;
+}
+
+.footer{
+  background-color: rgb(78, 79, 82);
+  color: rgb(255, 255, 255);
+}
+
+#Sbtn{
+  transition: transform 0.8s;
+  background-color: rgba(0, 128, 0, 0.774);
+  border: none !important;
+}
+
+#Sbtn:hover{
+  transform: scale(0.8);
+  background-color: rgba(0, 8, 119, 0.849);
+  border: none;
+}
+
+#mylogo{
+  animation: mylogo 1s ease-in-out infinite;
+}
+
+@keyframes mylogo{
+  0% ,100% {
+    transform: rotateZ(0deg);
+  }
+  50%{
+    transform: rotateZ(5deg);
+  }
+}
+
+.footer ul li a{
+  color: white;
+}
+
+.footer ul li a i{
+  animation: atag 3s ease-in-out infinite;
+}
+
+@keyframes atag{
+  0% ,100% {
+    transform: rotateY(0deg);
+  }
+  50%{
+    transform: rotateY(180deg);
+  }
+}
+
+

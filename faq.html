@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <title>Patrona Puppy Encyclopedia</title>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+    <div class="container-fluid">
+      <img id="mylogo" src="logo.png" alt="logo" style="width: 80px; height: 60px;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" id="hover">Home</a>
+          </li>
+          <li class="nav-item dropdown" id="hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Catagory
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="dogcatagory.html" id="hover">Dogs</a></li>
+              <li><a class="dropdown-item" href="catcatagory.html" id="hover">Cats</a></li>
+              <li><a class="dropdown-item" href="rabbitcatagory.html" id="hover">Rabbits</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="hover">
+            <a class="nav-link" href="products.html" id="navbarDropdown" role="button">
+              Products
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" id="hover">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html" id="hover">FAQ</a>
+          </li>
+        </ul>     
+      </div>
+    </div>
+  </nav>
+
+  <!--Navbar-->
+
+
+   <!-- Query Section -->
+   <section id="query" class="py-5">
+    <div class="container pt-5" style="background-color: rgba(128, 128, 128, 0.363); border-radius: 20px; box-shadow: 2px 2px 10px 2px;">
+        <h2 class="font-weight-light text-center">Have a Question?</h2>
+        <form class="m-5">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control rounded-pill" id="name" required>
+                <p id="nmsg"></p>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control rounded-pill" id="email" required>
+                <p id="emsg"></p>
+            </div>
+            <div class="form-group">
+                <label for="message">Ask Question</label>
+                <textarea class="form-control round-5" id="message" rows="5" required></textarea>
+                <p id="tmsg"></p>
+            </div>
+            <button type="button" class="btn btn-primary mb-2" id="Sbtn">Submit</button>
+        </form>
+    </div>
+</section>
+
+
+   <!-- footer start -->
+   <footer class="footer">
+    <section class="about" id="about">
+    <div class="container-fluid">
+      <div class="row pt-5">
+        <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; display: flex;">
+          <img id="mylogo" src="logo.png" alt="" class="img-fluid" style="width: 50%;">
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; text-align: justify;">
+          <h5 class="text-center  justify-content-center;">About Us</h5>
+          <p>
+            Patrona Puppies has been finding loving homes for puppies for over a decade. Breeders on our site are located throughout Pennsylvania and surrounding states. If you are looking puppies for buying, look no further.
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3" style=" justify-content: center; text-align: justify;">
+          <h5 class="text-center  justify-content-center;">Contact Us</h5>
+          <ul class="list-unstyled text-center">
+            <li>Phone: +1-800-123-4567</li>
+            <li>Email: info@patronapuppy.com</li>
+            <li>Address: 177 A Bleeckers St, New York</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3 text-center">
+          <h5 class="text-center">Follow Us</h5>
+          <ul class="list-inline footer-links">
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-12 text-center">
+          <p>&copy; 2024 [Patrona Puppy]. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- footer end -->
+
+
+  <script>
+    $(document).ready(function(){
+      $("#Sbtn").click(function(){
+        var name = $("#name").val();
+        var email = $("#email").val();
+        var message = $("#message").val();
+        var empty = "";
+
+        if(name == ""){
+          $("#name").addClass("is-invalid")
+          $("#name").removeClass("is-valid")
+          $("#nmsg").html("Enter Your Name")
+          $("#nmsg").css("color","red")
+          empty +="name";
+        }else{
+          $("#name").addClass("is-valid")
+          $("#name").removeClass("is-invalid")
+          $("#nmsg").html("")
+          $("#nmsg").remove("color","red")
+
+        }
+        if(email == ""){
+          $("#email").addClass("is-invalid")
+          $("#email").removeClass("is-valid")
+          $("#emsg").html("Enter Your Email")
+          $("#emsg").css("color","red")
+          empty +="email";
+        }else{
+          $("#email").addClass("is-valid")
+          $("#email").removeClass("is-invalid")
+          $("#emsg").html("")
+          $("#emsg").remove("color","red")
+
+        }
+        if(message == ""){
+          $("#message").addClass("is-invalid")
+          $("#message").removeClass("is-valid")
+          $("#tmsg").html("Please fill this box")
+          $("#tmsg").css("color","red")
+          empty +="message";
+        }else{
+          $("#message").addClass("is-valid")
+          $("#message").removeClass("is-invalid")
+          $("#tmsg").html("")
+          $("#tmsg").remove("color","red")
+
+        }
+
+        if(empty == ""){
+          alert("Form Submit Successfuly")
+          localStorage.setItem("Name",name)
+          localStorage.setItem("Email",email)
+          localStorage.setItem("Question",message)
+        }else{
+          alert("Please fill this form")
+        }
+      })
+    })
+
+
+  </script>
+
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+  
+</body>
+
+</html>
